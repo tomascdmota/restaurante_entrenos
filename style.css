@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@400;700&display=swap');
+
+
+
+:root{
+    margin: 0;
+}
 body {
     background-color: #E9DABE;
     margin: 0;
     overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .navigation .logo img {
@@ -24,8 +32,9 @@ nav {
     display: flex;
     justify-content: center;
     background-color: black;
-    width: 100%;
+    width: 100vw;
     padding: 10px;
+    font-family: 'Cherry Swash';
 }
 
 nav a {
@@ -33,4 +42,165 @@ nav a {
     text-decoration: none;
     margin-left: 20px;
     margin-right: 20px;
+}
+.nav-link a {
+    color: white;
+}
+
+.vertical-center {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.about {
+    width: 80%;
+}
+
+.about img {
+    max-width: 100%;
+    height: auto;
+    max-height: 700px; /* Adjust the maximum height as needed */
+}
+
+.menu-container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.menu-section {
+    margin-bottom: 30px;
+}
+
+.menu-section-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'Cherry Swash';
+}
+
+.menu-image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-image-wrapper {
+    flex: 1 0 16.666%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.menu-container h1{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.menu-section h2{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.menu-image-wrapper img {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    height: 60%; /* Add this line */
+}
+
+.menu-image-wrapper p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+footer {
+   color: black;
+    background-color: black; /* Update background color to black */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-title {
+    margin-bottom: 20px;
+    color: #fff; /* Set the color of the title to white */
+    margin: 0 auto; /* Center the title horizontally */
+    max-width: 200px; /* Set a maximum width for better centering */
+    font-family:'Cherry swash';
+}
+
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.grid-item {
+    padding: 20px;
+    text-align: center;
+}
+
+.icon-white {
+    color: white;
+}
+
+
+
+
+.reservation-section {
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.reservation-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-family: 'Cherry Swash';
+}
+
+.reservation-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.btn-submit {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #fff;
+    color: black;
 }
