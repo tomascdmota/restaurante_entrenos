@@ -112,28 +112,21 @@ nav a {
     font-size: 1.5rem;
     font-weight: bold;
 }
-
-
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
 footer {
-   color: black;
-    background-color: black; /* Update background color to black */
+    color: black;
+    background-color: black;
     color: #fff;
     padding: 20px 0;
     text-align: center;
 }
 
 .footer-title {
-    margin-bottom: 20px;
-    color: #fff; /* Set the color of the title to white */
-    margin: 0 auto; /* Center the title horizontally */
-    max-width: 200px; /* Set a maximum width for better centering */
-    font-family:'Cherry swash';
-}
-
-.navbar-nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 .grid-container {
@@ -141,17 +134,40 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
     justify-content: center;
-}
-
-.grid-item {
-    padding: 20px;
     text-align: center;
 }
 
-.icon-white {
-    color: white;
+.grid-item {
+    text-align: center;
 }
 
+.grid-item div {
+    display: inline-block;
+    vertical-align: middle; /* Adjusted to align icons vertically with the text */
+}
+
+.fa {
+    height: 50px;
+    width: 50px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 1500px){
+    .grid-item h2 {
+        font-size: 1rem;
+    }
+}
 
 
 
@@ -168,8 +184,11 @@ footer {
 }
 
 .reservation-form {
-    max-width: 400px;
+    max-width: 600px; /* Set the max-width for the form container */
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .form-group {
@@ -185,10 +204,11 @@ label {
 input[type="date"],
 input[type="time"],
 input[type="number"] {
-    width: 100%;
+    width: 100%; /* Set the width to 100% for fluidity */
     padding: 10px;
     border: 1px solid #ced4da;
     border-radius: 5px;
+    max-width: 600px; /* Limit the maximum width */
 }
 
 .btn-submit {
@@ -199,9 +219,19 @@ input[type="number"] {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 200px;
+    margin-top: 20px;
 }
 
 .btn-submit:hover {
     background-color: #fff;
     color: black;
+}
+
+
+
+.grid-item a {
+    text-decoration: none;
+    color: white;
 }
